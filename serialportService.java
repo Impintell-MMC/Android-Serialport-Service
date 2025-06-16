@@ -51,7 +51,7 @@ public class SerialService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         // Optional: Send a sample command after service starts
         if (serialHelper != null && serialHelper.isOpen()) {
-            String command = "5020FA"; // Example HEX command
+            String command = "68656C6C6F"; // Example HEX command "hello"
             serialHelper.sendHex(command);
             Log.d(TAG, "Sent: " + command);
         }
