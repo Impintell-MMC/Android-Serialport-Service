@@ -49,7 +49,7 @@ The SerialService is started as a background Android service.
 
 It opens the serial port /dev/ttyS1 with baud rate 9600.
 When data is received, it is logged as a hexadecimal string.
-A sample hex command (3580FA) is sent on service start.
+A sample hex command (68656C6C6F) is sent on service start.
 When the service is stopped, the serial port is closed.
 
 📄 Example Usage
